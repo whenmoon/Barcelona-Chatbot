@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chatbot!</title>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"></link>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>      
+
+        <script type="text/javascript" src="javascript.js"></script>
+    </head>
+    <body>
+
+        <!-- Flexbox parent container and flex header -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <button id="getStarted" class="getStartedStyling">Click To Get Started!</button>
+            </div>
+
+            <!-- Main chat window -->
+            <div class="chat-body" id="chatbody">             
+                <div id="q1" class="questions"></div>
+            </div>
+
+            <!-- Write and send messages in flex footer -->
+            <div class="chat-footer">
+                <textarea id="#typedText" cols="31px" rows="1" placeholder="Type your message here..."></textarea>
+
+                <!-- Send button -->
+                <button id="sendButton" class="sendButton" onclick="onSendClick()">Send</button>
+            </div>
+        </div>
+    </body>
+</html>
+
